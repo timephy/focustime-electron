@@ -1,7 +1,7 @@
 {
   "name": "focustime",
   "version": "1.0.0",
-  "description": "A macOS app to set a focus timer.",
+  "description": "An electron app to set a focus timer.",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
