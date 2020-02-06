@@ -1,2 +1,3 @@
 # focustime
-A macOS app to set a focus timer.
+
+An electron app to set a focus timer.
