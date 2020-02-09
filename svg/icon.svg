@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,-5.68434e-14,1024)">
+        <circle cx="512" cy="512" r="512" style="fill:url(#_Linear1);"/>
+    </g>
+    <g transform="matrix(5.74053e-17,-0.9375,0.9375,5.74053e-17,32,992)">
+        <circle cx="512" cy="512" r="512" style="fill:url(#_Linear2);"/>
+    </g>
+    <g transform="matrix(0.666667,0,0,0.666667,170.666,170.666)">
+        <g id="Medium-L" transform="matrix(1.23094e-16,7.96064,-7.96065,1.23094e-16,231.724,-90.9037)">
+            <path d="M85.352,-25.83C90.283,-30.957 89.209,-37.988 83.35,-42.041L51.318,-64.356C47.9,-66.699 44.58,-63.33 46.875,-59.961L69.19,-27.881C69.497,-27.437 69.821,-27.02 70.16,-26.631C74.297,-21.886 80.658,-21.272 85.352,-25.83Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+        <g id="Timer-Body" serif:id="Timer Body" transform="matrix(1.02993,1.02993,-1.02993,1.02993,511.98,-543.056)">
+            <path d="M512.174,160.001L512.266,160C705.48,160 864,318.52 864,512C864,705.213 705.212,864 512,864C318.52,864 160,705.213 160,512C160,426.069 192.291,346.808 244.597,285.696C257.674,268.883 277.956,267.548 290.498,280.091C303.042,292.901 301.44,309.18 290.232,324.124C246.999,374.562 221.113,440.213 220.846,512C220.579,672.922 350.544,802.887 512,802.887C673.457,802.887 802.885,672.922 802.885,512C802.885,358.017 685.465,232.589 533.883,221.113L514.648,220.791C513.775,220.866 512.892,220.905 512,220.905C495.193,220.905 481.548,207.26 481.548,190.452C481.548,173.645 495.193,160 512,160L512.174,160.001Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+        <g id="Button" transform="matrix(1.02993,-1.02993,1.02993,1.02993,-318.962,144.107)">
+            <g transform="matrix(1.00815,0,0,1.00815,-298.912,-1.32517)">
+                <circle cx="519.484" cy="192.32" r="29.757" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1,-1.34169e-16,-4.11974e-16,2.00018,1.48123e-13,-192.598)">
+                <rect x="194.807" y="192.563" width="60" height="30" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1024,0,0,1024,0,512)"><stop offset="0" style="stop-color:rgb(0,85,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,177,255);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1024,0,0,1024,0,512)"><stop offset="0" style="stop-color:rgb(0,126,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,185,255);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>
