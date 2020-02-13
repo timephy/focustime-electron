@@ -9,7 +9,7 @@
     "pack:win32": "electron-packager . Focustime --out=dist --platform=win32 --arch=ia32 --icon=icons/win/icon.ico --overwrite",
     "pack:win64": "electron-packager . Focustime --out=dist --platform=win32 --arch=x64 --icon=icons/win/icon.ico --overwrite",
     "generate:images": "./bin/generate-images.sh",
-    "generate:icons": "./node_modules/.bin/electron-icon-maker --input=images/icon.png",
+    "generate:icons": "./bin/generate-icons.sh",
     "build": "npm run generate:images && npm run generate:icons && npm run pack:osx && npm run pack:win32 && npm run pack:win64"
   },
   "repository": {
@@ -24,7 +24,6 @@
   "homepage": "https://github.com/timephy/focustime#readme",
   "devDependencies": {
     "electron": "^8.0.0",
-    "electron-icon-maker": "0.0.4",
     "eslint": "^6.8.0",
     "svgexport": "^0.4.0"
   },
