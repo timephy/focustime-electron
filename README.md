@@ -1,5 +1,7 @@
 # Focustime
 
+![Icon](/svg/icon.svg)
+
 A system tray app to set a timer.
 
 Built with electron. :electron:
