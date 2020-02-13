@@ -109,14 +109,14 @@ function updateMenu() {
           type: "checkbox",
           checked: settings.showSeconds,
           click: () => toggleSetting("showSeconds")
-        },
-        seperator,
-        {
-          label: "Acoustic feedback",
-          type: "checkbox",
-          checked: settings.acousticFeedback,
-          click: () => toggleSetting("acousticFeedback")
         }
+        // seperator,
+        // {
+        //   label: "Acoustic feedback",
+        //   type: "checkbox",
+        //   checked: settings.acousticFeedback,
+        //   click: () => toggleSetting("acousticFeedback")
+        // }
         // {
         //   label: "Start timer with left-click",
         //   type: "checkbox",
