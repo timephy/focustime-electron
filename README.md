@@ -1,6 +1,8 @@
-# focustime
+# Focustime
 
-An electron app to set a focus timer.
+A system tray app to set a timer.
+
+Built with electron. :electron:
 
 ## How to run
 
