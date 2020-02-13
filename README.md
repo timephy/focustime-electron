@@ -1,9 +1,9 @@
-# Focustime
-
 <!-- ![Icon](/svg/icon.svg | width=100) -->
-<p align="center">
-  <img src="/svg/icon.svg" width="100">
-</p>
+<div align="center">
+  <img src="/svg/icon.svg" width=300>
+</div>
+
+# Focustime
 
 A system tray app to set a timer.
 
