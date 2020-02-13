@@ -61,7 +61,7 @@ function updateMenuTitle() {
 
 const seperator = { type: "separator" };
 function updateMenu() {
-  const customTimes = store.getCustomTimes();
+  // const customTimes = store.getCustomTimes();
   const settings = store.getSettings();
 
   const contextMenu = Menu.buildFromTemplate([
@@ -174,20 +174,20 @@ function clickAbout() {
   });
 }
 
-function clickCustomTime() {
-  print("clickCustomTime");
-  store.addCustomTime(5);
-  store.addCustomTime(10);
-  store.addCustomTime(30);
-  store.addCustomTime(45);
-  updateMenu();
-}
+// function clickCustomTime() {
+//   print("clickCustomTime");
+//   store.addCustomTime(5);
+//   store.addCustomTime(10);
+//   store.addCustomTime(30);
+//   store.addCustomTime(45);
+//   updateMenu();
+// }
 
-function clickClearCustomTimes() {
-  print("clickClearCustomTimes");
-  store.clearCustomTimes();
-  updateMenu();
-}
+// function clickClearCustomTimes() {
+//   print("clickClearCustomTimes");
+//   store.clearCustomTimes();
+//   updateMenu();
+// }
 
 function clickStart(seconds) {
   if (state != "idle") {
