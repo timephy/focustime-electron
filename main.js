@@ -38,8 +38,10 @@ function setMenuTitle(title) {
 
 function updateMenuTitle() {
   if (state == "idle") {
+    tray.setImage(path.join(__dirname, "images/symbolTemplate.png"));
     setMenuTitle("");
   } else if (state == "run") {
+    tray.setImage(path.join(__dirname, "images/symbol-playTemplate.png"));
     setMenuTitle(
       utils.secondsToStringShort(
         parseInt((stateTime - new Date().getTime()) / 1000 + 1),
@@ -47,6 +49,7 @@ function updateMenuTitle() {
       )
     );
   } else if (state == "pause") {
+    tray.setImage(path.join(__dirname, "images/symbol-pauseTemplate.png"));
     setMenuTitle(
       utils.secondsToStringShort(
         parseInt(stateTime / 1000),
@@ -74,23 +77,23 @@ function updateMenu() {
 
       click: () => clickStart(t)
     })),
-    seperator,
-    {
-      label: "Custom Times",
-      visible: customTimes.length != 0,
-      enabled: false
-    },
-    ...customTimes.map(t => ({
-      label: utils.minutesToString(t),
-      click: () => clickStart(t)
-    })),
-    seperator,
-    { label: "Add Time", click: clickCustomTime },
-    {
-      label: "Clear Custom Times",
-      enabled: customTimes.length != 0,
-      click: clickClearCustomTimes
-    },
+    // seperator,
+    // {
+    //   label: "Custom Times",
+    //   visible: customTimes.length != 0,
+    //   enabled: false
+    // },
+    // ...customTimes.map(t => ({
+    //   label: utils.minutesToString(t),
+    //   click: () => clickStart(t)
+    // })),
+    // seperator,
+    // { label: "Add Time", click: clickCustomTime },
+    // {
+    //   label: "Clear Custom Times",
+    //   enabled: customTimes.length != 0,
+    //   click: clickClearCustomTimes
+    // },
     seperator,
     {
       label: "Preferences",
@@ -234,6 +237,7 @@ function pause() {
   stateInterval = null;
 
   updateMenu();
+  updateMenuTitle();
 }
 
 function cancel() {
