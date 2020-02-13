@@ -5,12 +5,12 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "pack:osx": "electron-packager . Focustime --out=dist --platform=darwin --arch=x64 --icon=icons/mac/icon.icns --overwrite",
+    "pack:mac": "electron-packager . Focustime --out=dist --platform=darwin --arch=x64 --icon=icons/mac/icon.icns --overwrite",
     "pack:win32": "electron-packager . Focustime --out=dist --platform=win32 --arch=ia32 --icon=icons/win/icon.ico --overwrite",
     "pack:win64": "electron-packager . Focustime --out=dist --platform=win32 --arch=x64 --icon=icons/win/icon.ico --overwrite",
     "generate:images": "./bin/generate-images.sh",
     "generate:icons": "./bin/generate-icons.sh",
-    "build": "npm run generate:images && npm run generate:icons && npm run pack:osx && npm run pack:win32 && npm run pack:win64"
+    "build": "npm run generate:images && npm run generate:icons && npm run pack:mac && npm run pack:win32 && npm run pack:win64"
   },
   "repository": {
     "type": "git",
