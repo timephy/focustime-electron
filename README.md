@@ -1,6 +1,6 @@
 <!-- ![Icon](/svg/icon.svg | width=100) -->
 <div align="center">
-  <img src="/svg/icon.svg" width=250>
+  <img src="/svg/icon.svg" width=200>
 </div>
 
 # Focustime
