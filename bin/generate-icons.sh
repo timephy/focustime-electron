@@ -4,7 +4,8 @@ mkdir -p icons
 
 # win
 mkdir -p icons/win
-svgexport svg/icon.svg icons/win/icon.ico
+svgexport svg/icon.svg icons/win/icon.png
+convert icons/win/icon.png -resize 256x256 icons/win/icon.ico
 
 # mac
 # mkdir -p icons/mac
