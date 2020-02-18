@@ -6,6 +6,7 @@ const {
   Notification,
   dialog
 } = require("electron");
+
 const path = require("path");
 const utils = require(path.resolve(__dirname, "./utils.js"));
 const store = require(path.resolve(__dirname, "./store.js"));
@@ -13,7 +14,9 @@ const store = require(path.resolve(__dirname, "./store.js"));
 const print = console.log;
 
 // Hide app from dock
-app.dock.hide();
+if (process.platform === "darwin") {
+  app.dock.hide();
+}
 
 // SETTINGS
 
