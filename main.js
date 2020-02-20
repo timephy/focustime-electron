@@ -32,6 +32,12 @@ let stateInterval = null;
 
 // DISPLAY
 
+const displayTime = (time, showSeconds) =>
+  utils.secondsToStringShort(
+    parseInt(time),
+    showSeconds || store.getSettings().showSeconds
+  );
+
 function setMenuTitle(title) {
   if (title) {
     title = " " + title;
@@ -43,22 +49,17 @@ function updateMenuTitle() {
   if (state == "idle") {
     tray.setImage(path.join(__dirname, "images/symbolTemplate.png"));
     setMenuTitle("");
+    tray.setToolTip("Focustime");
   } else if (state == "run") {
     tray.setImage(path.join(__dirname, "images/symbol-playTemplate.png"));
-    setMenuTitle(
-      utils.secondsToStringShort(
-        parseInt((stateTime - new Date().getTime()) / 1000 + 1),
-        store.getSettings().showSeconds
-      )
-    );
+    const timeLeft = (stateTime - new Date().getTime()) / 1000 + 1;
+    setMenuTitle(displayTime(timeLeft));
+    tray.setToolTip(displayTime(timeLeft, true));
   } else if (state == "pause") {
     tray.setImage(path.join(__dirname, "images/symbol-pauseTemplate.png"));
-    setMenuTitle(
-      utils.secondsToStringShort(
-        parseInt(stateTime / 1000),
-        store.getSettings().showSeconds
-      )
-    );
+    const timeLeft = stateTime / 1000;
+    setMenuTitle(displayTime(timeLeft));
+    tray.setToolTip(displayTime(timeLeft, true));
   }
 }
 
@@ -259,7 +260,6 @@ function cancel() {
 
 app.on("ready", () => {
   tray = new Tray(path.join(__dirname, "images/symbolTemplate.png"));
-  tray.setToolTip("Focustime");
 
   updateMenu();
   updateMenuTitle();
