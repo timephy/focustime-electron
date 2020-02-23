@@ -225,12 +225,14 @@ function start(ms) {
 }
 
 function resume() {
+  if (state != "pause") return;
   print("resume");
 
   start(stateTime);
 }
 
 function pause() {
+  if (state != "run") return;
   print("pause");
 
   state = "pause";
@@ -245,6 +247,7 @@ function pause() {
 }
 
 function cancel() {
+  if (state == "idle") return;
   print("cancel");
 
   clearTimeout(stateTimeout);
