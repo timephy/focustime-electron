@@ -6,6 +6,7 @@
   "build": {
     "appId": "com.timguggenmos.focustime",
     "productName": "Focustime",
+    "icon": "images/icon.png",
     "mac": {
       "category": "public.app-category.productivity",
       "target": "dmg"
@@ -13,16 +14,11 @@
   },
   "scripts": {
     "start": "electron .",
-    "pack:mac": "electron-packager . Focustime --out=dist --platform=darwin --arch=x64 --icon=icons/mac/icon.icns --overwrite",
-    "pack:win32": "electron-packager . Focustime --out=dist --platform=win32 --arch=ia32 --icon=icons/win/icon.ico --overwrite",
-    "pack:win64": "electron-packager . Focustime --out=dist --platform=win32 --arch=x64 --icon=icons/win/icon.ico --overwrite",
-    "pack": "npm run generate:images && npm run generate:icons && npm run pack:mac && npm run pack:win32 && npm run pack:win64",
     "build:mac": "electron-builder -m",
     "build:win": "electron-builder -w",
     "build:linux": "electron-builder -l",
-    "build": "npm run build:mac && npm run build:win && npm run build:linux",
-    "generate:images": "./bin/generate-images.sh",
-    "generate:icons": "./bin/generate-icons.sh"
+    "build": "electron-builder -mwl",
+    "generate:images": "./bin/generate-images.sh"
   },
   "repository": {
     "type": "git",
