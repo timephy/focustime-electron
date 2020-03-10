@@ -11,10 +11,24 @@ Built with electron. :electron:
 
 ## How to run
 
-### Development
-
 ```bash
 npm install
 npm run generate:images
 npm start
+```
+
+## How to build
+
+```bash
+npm install
+npm run generate:images
+npm run build
+```
+
+You can also build platform-specific:
+
+```bash
+npm start:mac
+npm start:win
+npm start:linux
 ```
